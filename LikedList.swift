@@ -40,3 +40,10 @@ extension LinkedList: CustomStringConvertible {
         return String(describing: head)
     }
 }
+
+public mutating func mutated(value: Value) {
+    head = Node(value: value, next: head?.next)
+    if tail == nil {
+        tail = head
+    }
+}
