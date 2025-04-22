@@ -27,7 +27,7 @@ public struct LinkedList<Value> {
         
         tail!.next = Node(value: value)
         tail = tail!.next
-
+        
     }
     
     public mutating func merge(value: Value) {
@@ -42,18 +42,27 @@ public struct LinkedList<Value> {
         if tail == nil {
             tail = head
         }
-    }}
-
-extension LinkedList: CustomStringConvertible {
-    public var description: String {
-        guard let head = head else {
-            return "Empty list"
-        }
-        
-        return String(describing: head)
     }
+    
+    public mutating func rebase(value: Value) {
+        head = Node(value: value, next: head?.next)
+        if tail == nil {
+            tail = head
+        }
+    }
+    
+    extension LinkedList: CustomStringConvertible {
+        public var description: String {
+            guard let head = head else {
+                return "Empty list"
+            }
+            
+            return String(describing: head)
+        }
+    }
+    
+    
 }
-
 public mutating func mutated(value: Value) {
     head = Node(value: value, next: head?.next)
     if tail == nil {
