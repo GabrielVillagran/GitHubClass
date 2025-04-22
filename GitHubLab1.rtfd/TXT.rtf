@@ -1,11 +1,10 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2820
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\froman\fcharset0 Times-Bold;\f2\froman\fcharset0 TimesNewRomanPSMT;
-\f3\froman\fcharset0 Times-Italic;\f4\fnil\fcharset0 Menlo-Regular;\f5\fswiss\fcharset0 Arial-BoldItalicMT;
-}
+\f3\froman\fcharset0 Times-Italic;\f4\fswiss\fcharset0 Arial-BoldItalicMT;}
 {\colortbl;\red255\green255\blue255;\red17\green85\blue204;\red170\green171\blue37;\red56\green185\blue199;
-\red57\green192\blue38;\red202\green51\blue35;\red170\green171\blue37;\red0\green0\blue0;}
+\red57\green192\blue38;\red202\green51\blue35;\red0\green0\blue0;}
 {\*\expandedcolortbl;;\csgenericrgb\c6667\c33333\c80000;\csgenericrgb\c66667\c67059\c14510;\csgenericrgb\c21961\c72549\c78039;
-\csgenericrgb\c22353\c75294\c14902;\csgenericrgb\c79216\c20000\c13725;\cssrgb\c72331\c71682\c18599;\csgenericrgb\c0\c0\c0;}
+\csgenericrgb\c22353\c75294\c14902;\csgenericrgb\c79216\c20000\c13725;\csgenericrgb\c0\c0\c0;}
 \margl1440\margr1440\vieww29200\viewh18400\viewkind0
 \deftab720
 \pard\pardeftab720\pardirnatural\qc\partightenfactor0
@@ -90,6 +89,7 @@ Type $git diff. Add a screenshot as evidence.\
 \f1\b step 5
 \f0\b0 , to create a new commit.\
 After creating the commit type $git log. Add a screenshot of the file structure as evidence.\
+<<<<<<< HEAD
 \pard\pardeftab720\sb240\sa240\pardirnatural\partightenfactor0
 
 \f1\b \cf0 {{\NeXTGraphic Screenshot 2025-04-22 at 12.43.58 PM.png \width16120 \height10880 \appleattachmentpadding0 \appleembedtype0 \appleaqc
@@ -98,6 +98,9 @@ After creating the commit type $git log. Add a screenshot of the file structure 
 \f0\b0 \cf0 \
 \pard\pardeftab720\sb240\sa240\pardirnatural\partightenfactor0
 \cf0 Copy the commit  hash number. It should be a number similar to 
+=======
+Copy the commit  hash number. It should be a number similar to 
+>>>>>>> 6078e3cafae291a2329d090688fd4d69379ceab1
 \f1\b\fs17 \cf3 5a941b10a3d3717870eea10a30dff3fd9cb4c018
 \f0\b0\fs24 \cf0 , note it won\'92t be the same as the one shown here since these hash are always different for each commit\
 \pard\pardeftab720\pardirnatural\partightenfactor0
@@ -107,6 +110,7 @@ After creating the commit type $git log. Add a screenshot of the file structure 
 \f0\b0 \cf3 , 
 \f1\b \cf6 origin/starter
 \f0\b0 \cf3 )\
+<<<<<<< HEAD
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
@@ -121,12 +125,19 @@ After creating the commit type $git log. Add a screenshot of the file structure 
 \cf0 \
 \pard\pardeftab720\sb240\sa240\pardirnatural\partightenfactor0
 \cf0 Type $git push origin GitHubBasicLab1/your_name/exercise1 to push your changes to the remote repository. Verify that your changes to the file LikedList.swift are present in the GitHub repository.\
+=======
+\pard\pardeftab720\sb240\sa240\pardirnatural\partightenfactor0
+
+\fs24 \cf0 Type $git show [commit number that you got from Step6]. Add a screenshot as evidence.\
+Type $git push origin GitHubBasicLab1/your_name/exercise1 to push your changes to the remote repository. Verify that your changes to the file LikedList.swift are present in the GitHub repository.\
+>>>>>>> 6078e3cafae291a2329d090688fd4d69379ceab1
 \pard\pardeftab720\sb240\sa240\pardirnatural\partightenfactor0
 
 \f1\b \cf0 GIT MERGE.
 \f0\b0 \uc0\u8232  						\u8232 
 \f1\b Step 1 
 \f0\b0 - Verify you are still in your branch GitHubBasicLab1/your_name/exercise1.\
+<<<<<<< HEAD
 \pard\pardeftab720\sb240\sa240\pardirnatural\partightenfactor0
 
 \f1\b \cf0 Step 2 
@@ -136,6 +147,15 @@ After creating the commit type $git log. Add a screenshot of the file structure 
 \pard\pardeftab720\sb240\sa240\pardirnatural\partightenfactor0
 
 \f1\b \cf0 Step 3 
+=======
+
+\f1\b Step 2 
+\f0\b0 - Switch back to the branch 
+\f1\b starter
+\f0\b0 .  Type $git checkout starter\
+
+\f1\b Step 3 
+>>>>>>> 6078e3cafae291a2329d090688fd4d69379ceab1
 \f0\b0 - Create a new child branch from starter  named: GitHubBasicLab1/your_name/exercise2\
 Use git branch GitHubBasicLab1/your_name/exercise2\
 
@@ -202,7 +222,11 @@ Type $git log  - -graph. Add a screenshot as evidence.\
 \f0\b0 :\
 \pard\pardeftab720\sb60\sa60\pardirnatural\partightenfactor0
 
+<<<<<<< HEAD
 \f1\b\fs26 \cf8 Exercise 1: Reverting to a previous version\
+=======
+\f1\b\fs26 \cf7 Exercise 1: Reverting to a previous version\
+>>>>>>> 6078e3cafae291a2329d090688fd4d69379ceab1
 \pard\pardeftab720\sb240\sa240\pardirnatural\partightenfactor0
 
 \f0\b0\fs24 \cf0 Suppose we wish to undo our changes and revert back to the state of the remote repository of our last pull (or clone). DANGER ZONE: THIS WILL CLOBBER YOUR LOCAL COMMITS (LOSES WORK)!\
@@ -221,17 +245,28 @@ Modify the file hello world.txt and create a new commit. Then revert  to the pre
 \
 \pard\pardeftab720\sb60\sa60\pardirnatural\partightenfactor0
 
+<<<<<<< HEAD
 \f1\b\fs26 \cf8 Exercise 2: Create the following git commit and branch graph.\
+=======
+\f1\b\fs26 \cf7 Exercise 2: Create the following git commit and branch graph.\
+>>>>>>> 6078e3cafae291a2329d090688fd4d69379ceab1
 \pard\pardeftab720\pardirnatural\partightenfactor0
 
 \f0\b0\fs24 \cf0 Add a screenshot as evidence.\
 \
 \pard\pardeftab720\pardirnatural\partightenfactor0
 
+<<<<<<< HEAD
 \f5\i\b\fs28 \cf8 \strike \strikec8 Starter\
 \pard\pardeftab720\sb240\sa240\pardirnatural\partightenfactor0
 
 \fs22 \cf8 \strikec8  GitHubBasicLab1/your_name/exercise5\
+=======
+\f4\i\b\fs28 \cf7 \strike \strikec7 Starter\
+\pard\pardeftab720\sb240\sa240\pardirnatural\partightenfactor0
+
+\fs22 \cf7 \strikec7  GitHubBasicLab1/your_name/exercise5\
+>>>>>>> 6078e3cafae291a2329d090688fd4d69379ceab1
  GitHubBasicLab1/your_name/hotfix1\
  GitHubBasicLab1/your_name/exercise5\
 }
