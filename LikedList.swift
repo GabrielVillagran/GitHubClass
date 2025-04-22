@@ -10,6 +10,11 @@ public struct LinkedList<Value> {
         head == nil
     }
     
+
+
+
+
+     
     //add a value at the beginning of the list
     public mutating func push(value: Value) {
         head = Node(value: value, next: head?.next)
@@ -17,7 +22,12 @@ public struct LinkedList<Value> {
             tail = head
         }
     }
-    
+ 
+
+	hotfix change
+
+
+   
     //add a value at the end of the list
     public mutating func append(value: Value) {
         guard !isEmpty else {
