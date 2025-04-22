@@ -40,3 +40,8 @@ extension LinkedList: CustomStringConvertible {
         return String(describing: head)
     }
 }
+
+func printHello() {
+	print ("Hello world")
+}
+
