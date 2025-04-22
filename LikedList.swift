@@ -36,7 +36,13 @@ public struct LinkedList<Value> {
             tail = head
         }
     }
-}
+    
+    public mutating func merge2(value: Value) {
+        head = Node(value: value, next: head?.next)
+        if tail == nil {
+            tail = head
+        }
+    }}
 
 extension LinkedList: CustomStringConvertible {
     public var description: String {
