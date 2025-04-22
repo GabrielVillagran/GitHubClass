@@ -36,6 +36,13 @@ public struct LinkedList<Value> {
             tail = head
         }
     }
+    
+    public mutating func hotfix(value: Value) {
+        head = Node(value: value, next: head?.next)
+        if tail == nil {
+            tail = head
+        }
+    }
 }
 
 extension LinkedList: CustomStringConvertible {
