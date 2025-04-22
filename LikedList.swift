@@ -45,3 +45,6 @@ func printHello() {
 	print ("Hello world")
 }
 
+func HelloWorldTwo {
+	print("HelloWorld2")
+}
