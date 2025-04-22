@@ -40,3 +40,8 @@ extension LinkedList: CustomStringConvertible {
         return String(describing: head)
     }
 }
+
+func reverseString(_ str: String) -> String {
+    return String(str.reversed())
+}
+
