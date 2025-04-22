@@ -10,6 +10,10 @@ public struct LinkedList<Value> {
         head == nil
     }
     
+
+    Last change exercise 6
+
+    
     //add a value at the beginning of the list
     public mutating func push(value: Value) {
         head = Node(value: value, next: head?.next)
