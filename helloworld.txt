@@ -57,3 +57,5 @@ linea 1
 16
 
 Ruben
+
+This line was added for Exercise 3.
