@@ -10,14 +10,12 @@ public struct LinkedList<Value> {
         head == nil
     }
     
-    //add a value at the beginning of the list
-    public mutating func push(value: Value) {
         head = Node(value: value, next: head?.next)
         if tail == nil {
             tail = head
         }
     }
-    
+   ineininided 
     //add a value at the end of the list
     public mutating func append(value: Value) {
         guard !isEmpty else {
@@ -29,6 +27,10 @@ public struct LinkedList<Value> {
         tail = tail!.next
 
     }
+}
+
+func isEven(_ number: Int) -> Bool {
+    return number % 2 == 0
 }
 
 extension LinkedList: CustomStringConvertible {
